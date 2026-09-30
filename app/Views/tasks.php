@@ -12,7 +12,7 @@
             <?php foreach ($tasks as $task): ?>
                 <tr>
                     <td><?= esc($task['title']) ?></td>
-                    <td class="status"><?= esc($task['status']) ?></td>
+                    <td class="status"><?= esc($task['status'] ?? 'pending') ?></td>
                     <td><?= esc($task['task_date']) ?></td>
                 </tr>
             <?php endforeach; ?>
